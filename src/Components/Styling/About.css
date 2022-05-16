@@ -1,0 +1,46 @@
+body {
+    background-color: white;
+}
+.heading {
+    color: black;
+    font-size: 2.2rem;
+    font-weight: 400;
+    margin-top: 7%;
+}
+
+.taskHeading {
+    color: black;
+    font-size: 2.2rem;
+    font-weight: 400;
+}
+
+.subHeading {
+    color: rgb(118, 117, 117);
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.startButton {
+    width: 23%;
+  padding: 1%;
+  background-color: #0288d1;
+  font-size: 16px;
+  color: white;
+  border-radius: 5px;
+  border-color: #03a9f4;
+  cursor: pointer;
+}
+
+.startButton:hover {
+    background-color: #0277bd;
+}
+
+.addContainer {
+    margin-left: 100px;
+    margin-top: 70px;
+}
+
+.addDisplay{
+    display: flex;
+    margin-left: 16%;
+}

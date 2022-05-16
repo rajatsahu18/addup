@@ -1,0 +1,121 @@
+.header {
+	width: 80%;
+	padding: 10px 20px;
+	border-radius: 10px;
+	background: whitesmoke;
+	margin-left: 10%;
+	margin-top: 2%;
+	display: flex;
+	justify-content: space-between;
+	font: 500;
+	font-size: 22px;
+	opacity: .9;
+	font-weight: 600;
+}
+
+.date {
+	text-align: right;
+	margin-right: 30px;
+	color: black;
+}
+.taskTitle {
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	margin-left: 10%;
+}
+
+.title {
+	border: 1px solid #fff;
+	background: #81C784;
+	border-radius: 10px;
+	box-shadow: 0 0 10px #718fea;
+	padding: 5px;
+	width: 10%;
+	color: #fff;
+	max-width: 400px;
+	text-align: center;
+	margin-right: 50px;
+	font-size: 23px;
+	opacity: 0.9;
+}
+
+.des {
+	border: 1px solid #fff;
+	border-radius: 10px;
+	background: #42C3FD;
+	box-shadow: 0 0 10px #718fea;
+	padding: 5px;
+	width: 10%;
+	color: #000;
+	max-width: 400px;
+	text-align: center;
+	margin: 2% 50px 1% 0;
+	font-size: 23px;
+	opacity: 0.9;
+}
+.tag {
+	margin-left: 10px;
+}
+.fieldset {
+	width: 30%;
+	margin-left: 10%;
+	background: #42C3FD;
+	box-shadow: 0 0 10px #42C3FD;
+	opacity: .9;
+	text-align: left;
+	border-radius: 10px;
+}
+.sub-task {
+	display: flex;
+	justify-content: left;
+	width: fit-content;
+	margin: 10px auto;
+	width: 90%;
+	padding: 10px 20px;
+	border-radius: 5px;
+	background: whitesmoke;
+	font: 500;
+	font-size: 20px;
+	/* opacity: .9; */
+}
+.sub-task div {
+	margin: 0 10px;
+}
+
+.subtaskEditor {
+	display: none;
+	width: 100px;
+	margin-left: 10px;
+	justify-content: center;
+	position: relative;
+	z-index: 10;
+}
+.subtaskEditor i {
+	margin-right: 10px;
+}
+.sub-task:hover .subtaskEditor,
+.taskTitle:hover .subtaskEditor {
+	display: flex;
+	align-items: center;
+	z-index: 1;
+	cursor: pointer;
+	background-color: #42C3FD;
+}
+
+.add-Button {
+	width: fit-content;
+	padding: 10px 20px;
+	position: fixed;
+	right: 50px;
+	bottom: 50px;
+	border-radius: 25px;
+	color: white;
+	font-size: 20px;
+	background: #3333eb;
+	cursor: pointer;
+	box-shadow: 0 0 10px black;
+}
+.add-Button:hover {
+	background-color: #42C3FD;
+}

@@ -1,0 +1,37 @@
+body {
+	/* background-image: url("https://thumbs.dreamstime.com/b/yellow-tech-beehive-d-render-consists-many-hexagonal-shapes-black-reflective-plates-some-elevated-60120587.jpg"); */
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: 100vw 100vh;
+}
+.regForm {
+	box-shadow: 0 0 10px rgb(22, 22, 22);
+	background: #fff;
+	padding: 30px 40px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	width: 30%;
+	margin: auto;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+.submit {
+	border: none;
+	height: 40px;
+	background: #4170F7;
+	box-shadow: 0 0 10px gray;
+	color: #fff;
+	border-radius: 5px;
+	font-size: 20px;
+	font-weight: 500;
+	cursor: pointer;
+}
+.submit:hover {
+	background-color: #42C3FD;
+}
+h1,
+h3 {
+	color: #42C3FD;
+}
