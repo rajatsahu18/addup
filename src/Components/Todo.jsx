@@ -137,7 +137,7 @@ const Todo = () => {
                                 />
                                 <label>Todo</label>
                             </div>
-                            <div style={{display:'flex', justifyContent:'left',alignItems:'center', lineHeight:'30px'}} >
+                            <div style={{display:'flex', justifyContent:'left',alignItems:'center', lineHeight:'30px', marginRight: '1%'}} >
                                 <input type="radio" value="inProcess" name="todo"
                                     placeholder="add" onChange={changeHandler}
                                 />

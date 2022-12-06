@@ -37,7 +37,7 @@ export { create_account_request, create_account_success, create_account_failure,
 
 export const create_account = (details) => async dispatch => {
     try {
-        const res = await axios.post('https://json-server-projects.herokuapp.com/logindata', {
+        const res = await axios.post('https://json-mock-server.vercel.app/logindata', {
             ...details
         });
         dispatch(create_account_success(res.data));
@@ -89,7 +89,7 @@ export { login_request, login_success, login_failure, login_auth, isLogOut, user
 
 export const login = (username, password) => async dispatch => {
     try {
-        const res = await axios.get('https://json-server-projects.herokuapp.com/logindata', {
+        const res = await axios.get('https://json-mock-server.vercel.app/logindata', {
             password,
             username
         });
@@ -106,7 +106,7 @@ export const login = (username, password) => async dispatch => {
 export const getUserData = (username, token) => async dispatch => {
     try {
         const res = await axios.get(
-            `https://json-server-projects.herokuapp.com/logindata/${username}`, {
+            `https://json-mock-server.vercel.app/logindata/${username}`, {
             headers: {
                 Accept: `application/json`,
                 Authorization: `Bearer ${token}`

@@ -29,7 +29,7 @@ export { getTodoRequest, getTodoSuccess, getTodoFailure, changeTheme };
 export const getTodo = (params = {}) => async dispatch => {
     dispatch(getTodoRequest())
     try {
-        const res = await axios.get('https://json-server-olx.herokuapp.com/postDataToCart');
+        const res = await axios.get('https://json-mock-server.vercel.app/postDataToCart');
         dispatch(getTodoSuccess(res.data));
     } catch (err) {
         return dispatch(getTodoFailure(err));
@@ -58,7 +58,7 @@ export { postTodoRequest, postTodoSuccess, postTodoFailure };
 export const postTodo = (title) => async dispatch => {
     dispatch(postTodoRequest())
     try {
-        await axios.post('https://json-server-olx.herokuapp.com/postDataToCart', {
+        await axios.post('https://json-mock-server.vercel.app/postDataToCart', {
             ...title,
             status: false
         });
@@ -72,17 +72,17 @@ export const postTodo = (title) => async dispatch => {
 }
 
 export const updateTodo = (status, id) => dispatch => {
-    axios.patch(`https://json-server-olx.herokuapp.com/postDataToCart/${id}`, {
+    axios.patch(`https://json-mock-server.vercel.app/postDataToCart/${id}`, {
         status
     })
     .then((res)=> dispatch(getTodo()))
 }
 export const editTodo = (n, val, id) => dispatch => {
     
-    axios.patch(`https://json-server-olx.herokuapp.com/postDataToCart/${id}`, {[n]: val})
+    axios.patch(`https://json-mock-server.vercel.app/postDataToCart/${id}`, {[n]: val})
     .then((res)=> dispatch(getTodo()))
 }
 export const deleteTodo = (id) => dispatch => {
-    axios.delete(`https://json-server-olx.herokuapp.com/postDataToCart/${id}`)
+    axios.delete(`https://json-mock-server.vercel.app/postDataToCart/${id}`)
     .then((res)=> dispatch(getTodo()))
 }
