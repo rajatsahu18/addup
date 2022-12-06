@@ -5,6 +5,7 @@ import DialogActions from '@material-ui/core/DialogActions';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import Slide from '@material-ui/core/Slide';
 import { useHistory } from 'react-router-dom';
+import {RiDeleteBin7Fill} from "react-icons/ri"
 
 
 const Transition = React.forwardRef(function Transition(props, ref) {
@@ -39,7 +40,7 @@ export const Card = (props) => {
                     
                     onClick={()=>clickOPenHAndler()}
                 >
-                    <i class="fas fa-trash-alt"></i>
+                    <RiDeleteBin7Fill />
                 </button>
             </div>
             <div onClick={()=>handleTaskPage(props.id)}>
